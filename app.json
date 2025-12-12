@@ -20,10 +20,27 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.Memo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you add them to your memories.",
+          "cameraPermission": "The app accesses your camera to let you take photos for your memories."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "a230c65d-cfb7-4331-b613-a3412d72f65e"
+      }
     }
   }
 }

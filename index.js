@@ -1,4 +1,8 @@
+import 'react-native-get-random-values';
 import { registerRootComponent } from 'expo';
+import { LogBox } from 'react-native';
+
+LogBox.ignoreLogs(['Expo AV has been deprecated']);
 
 import App from './App';
 
